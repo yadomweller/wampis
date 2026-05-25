@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luffy Profile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('thousands sunny.jpg') no-repeat center/cover;
+    color: white;
+}
+
+/* Overlay for readability */
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Top section */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #facc15;
+    object-fit: cover;
+}
+
+.profile h1 {
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+/* Info cards */
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+/* Story section */
+.story {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* Back button */
+.back-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background: #facc15;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="luffy.jpg" alt="Luffy">
+        <h1>Monkey D. Luffy 🏴‍☠️</h1>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+        <div class="card"><strong>Birthday:</strong><br>May 5</div>
+        <div class="card"><strong>Age:</strong><br>19</div>
+        <div class="card"><strong>Height:</strong><br>174 cm</div>
+        <div class="card"><strong>Bounty:</strong><br>3,000,000,000 Berries</div>
+        <div class="card"><strong>Devil Fruit:</strong><br>Gomu Gomu no Mi</div>
+        <div class="card"><strong>Dream:</strong><br>Become King of the Pirates</div>
+    </div>
+
+    <!-- Story -->
+    <div class="story">
+        <h2>Story</h2>
+        <p>
+            Monkey D. Luffy is the captain of the Straw Hat Pirates and a boy with a dream
+            to become the King of the Pirates. After accidentally eating the Gomu Gomu no Mi,
+            his body gained the properties of rubber, allowing him to stretch and fight in
+            unique ways.
+        </p>
+
+        <p>
+            Inspired by the pirate Shanks, Luffy set out to sea to find the legendary treasure
+            known as the One Piece. Along his journey, he gathers a loyal crew and faces powerful
+            enemies, all while protecting his friends and following his strong sense of freedom.
+        </p>
+
+        <p>
+            Luffy is known for his fearless personality, huge appetite, and unwavering belief
+            in his dreams. No matter how tough the battle is, he never gives up.
+        </p>
+    </div>
+
+    <!-- Back button -->
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+</div>
+
+<script>
+function goBack() {
+    window.location.href = "contents.html"; // change if your main page name is different
+}
+</script>
+
+</body>
+</html>

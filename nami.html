@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nami Profile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('thousands sunny.jpg') no-repeat center/cover;
+    color: white;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #f97316; /* orange for Nami */
+    object-fit: cover;
+}
+
+.profile h1 {
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.story {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.back-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background: #f97316;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="nami.jpg" alt="Nami">
+        <h1>Nami 🧭</h1>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+        <div class="card"><strong>Birthday:</strong><br>July 3</div>
+        <div class="card"><strong>Age:</strong><br>20</div>
+        <div class="card"><strong>Height:</strong><br>170 cm</div>
+        <div class="card"><strong>Bounty:</strong><br>366,000,000 Berries</div>
+        <div class="card"><strong>Role:</strong><br>Navigator</div>
+        <div class="card"><strong>Dream:</strong><br>Draw a map of the entire world</div>
+    </div>
+
+    <!-- Story -->
+    <div class="story">
+        <h2>Story</h2>
+        <p>
+            Nami is the navigator of the Straw Hat Pirates and an expert in reading
+            weather patterns and navigating dangerous seas. She is highly intelligent,
+            resourceful, and has a strong love for money.
+        </p>
+
+        <p>
+            As a child, Nami was forced to work for the pirate Arlong, stealing from
+            others to buy back her village’s freedom. After meeting Luffy, she was
+            finally freed from that life and joined the crew.
+        </p>
+
+        <p>
+            Nami now travels the Grand Line with her friends, using her skills and
+            her weapon, the Clima-Tact, to control the weather in battle. Her dream
+            is to create a complete map of the world.
+        </p>
+    </div>
+
+    <!-- Back button -->
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+</div>
+
+<script>
+function goBack() {
+    window.location.href = "contents.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: url('thousands sunny.jpg') no-repeat center/cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-top: 50px;
+    background: rgba(55, 122, 209, 0.534);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+
+/* Luffy */
+.luffy {
+    margin-top: 20px;
+}
+
+.luffy img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* Crew grid */
+.crew {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+/* Card */
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+/* Hover zoom */
+.card:hover img {
+    transform: scale(1.2);
+}
+
+/* Name */
+.card span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.card:hover span {
+    opacity: 1;
+}
+
+/* Logout button */
+.logout-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background: #286355;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* MENU BAR */
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Main button */
+.menu-item {
+    position: relative;
+    background: #111;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Hidden dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: #222;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 150px;
+}
+
+/* Show on hover */
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+/* Each arc */
+.arc {
+    position: relative;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Sub dropdown (villains) */
+.sub-dropdown {
+    display: none;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 120px;
+}
+
+/* Show villains on hover */
+.arc:hover .sub-dropdown {
+    display: block;
+}
+
+/* Villain text */
+.sub-dropdown p {
+    margin: 5px 0;
+}
+
+/* Section titles */
+.section {
+    color: #00ffd5;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    border-bottom: 1px solid #555;
+    font-size: 14px;
+}
+</style>
+
+</head>
+
+<body>
+
+   <div class="menu">
+
+    <div class="menu-item">
+        <span>Arcs Villains☠️</span>
+
+        <div class="dropdown">
+
+            <!-- PRE TIMESKIP -->
+            <div class="section">Pre-Timeskip</div>
+
+            <div class="arc">
+                East Blue
+                <div class="sub-dropdown">
+                    <p>Buggy</p>
+                    <p>Arlong</p>
+                    <p>Don Krieg</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Alabasta
+                <div class="sub-dropdown">
+                    <p>Crocodile</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Skypiea
+                <div class="sub-dropdown">
+                    <p>Enel</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Water 7 / Enies Lobby
+                <div class="sub-dropdown">
+                    <p>Rob Lucci</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Thriller Bark
+                <div class="sub-dropdown">
+                    <p>Gecko Moria</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Marineford
+                <div class="sub-dropdown">
+                    <p>Akainu</p>
+                </div>
+            </div>
+
+            <!-- POST TIMESKIP -->
+            <div class="section">Post-Timeskip</div>
+
+            <div class="arc">
+                Fish-Man Island
+                <div class="sub-dropdown">
+                    <p>Hody Jones</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Dressrosa
+                <div class="sub-dropdown">
+                    <p>Doflamingo</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Whole Cake Island
+                <div class="sub-dropdown">
+                    <p>Big Mom</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Wano
+                <div class="sub-dropdown">
+                    <p>Kaido</p>
+                </div>
+            </div>
+
+            <div class="arc">
+                Egghead
+                <div class="sub-dropdown">
+                    <p>Saturn</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="header">
+    <h1>Welcome Pirates 🏴‍☠️</h1>
+    <p>Ready to sail the Grand Line!</p>
+</div>
+
+<!-- Luffy -->
+<div class="luffy">
+    <a href="luffy.html" class="card">
+        <img src="luffy.jpg">
+        <span>Luffy</span>
+    </a>
+</div>
+
+<!-- Crew -->
+<div class="crew">
+    <a href="zoro.html" class="card"><img src="zoro.jpg"><span>Zoro</span></a>
+    <a href="nami.html" class="card"><img src="nami.jpg"><span>Nami</span></a>
+    <a href="usopp.html" class="card"><img src="usopp.jpg"><span>Usopp</span></a>
+    <a href="sanji.html" class="card"><img src="sanji.jpg"><span>Sanji</span></a>
+    <a href="chopper.html" class="card"><img src="chopper.jpg"><span>Chopper</span></a>
+    <a href="robin.html" class="card"><img src="robin.jpg"><span>Robin</span></a>
+    <a href="franky.html" class="card"><img src="franky.jpg"><span>Franky</span></a>
+    <a href="brook.html" class="card"><img src="brook.jpg"><span>Brook</span></a>
+    <a href="jinbe.html" class="card"><img src="jinbe.jpg"><span>Jinbe</span></a>
+</div>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+<script>
+function logout() {
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+<style>
+    body{
+font-family : Brush Script MT, cursive;
+background-image: url('strawhat.jpg');
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;   
+ }
+.box{
+    background-color: rgba(110, 110, 91, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        }
+
+ input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            width: 107%;
+            padding: 10px;
+            margin-top: 10px;
+            background: rgb(6, 38, 56);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 50px;
+            font-color: rgb(27, 29, 21);
+        }
+
+        #message {
+            text-align: center;
+            margin-top: 15px;
+            color: rgb(11, 8, 54);
+        }
+       
+</style>
+</head>
+
+<body>
+    <div class="box">
+    <h2>Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+    // Demo username and password
+    const correctUsername = "Strawhat Pirates";
+    const correctPassword = "Luffy123";
+
+    function login() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const message = document.getElementById("message");
+
+        if(username === correctUsername && password === correctPassword) {
+            window.location.href = "contents.html"; // Redirect to contents page
+            message.style.color = "black";
+            message.style.fontFamily = "georgia, serif";
+            message.innerText = "Login Successful!";
+        } else {
+            message.style.color = "red";
+            message.innerText = "Wrong Username or Password";
+        }
+    }
+</script>
+
+    
+</body>
+</html>

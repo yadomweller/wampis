@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoro Profile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('thousands sunny.jpg') no-repeat center/cover;
+    color: white;
+}
+
+/* Overlay for readability */
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Top section */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #22c55e; /* green for Zoro */
+    object-fit: cover;
+}
+
+.profile h1 {
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+/* Info cards */
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+/* Story section */
+.story {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* Back button */
+.back-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background: #22c55e;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="zoro.jpg" alt="Zoro">
+        <h1>Roronoa Zoro ⚔️</h1>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+        <div class="card"><strong>Birthday:</strong><br>November 11</div>
+        <div class="card"><strong>Age:</strong><br>21</div>
+        <div class="card"><strong>Height:</strong><br>181 cm</div>
+        <div class="card"><strong>Bounty:</strong><br>1,111,000,000 Berries</div>
+        <div class="card"><strong>Fighting Style:</strong><br>Three Sword Style</div>
+        <div class="card"><strong>Dream:</strong><br>World’s Greatest Swordsman</div>
+    </div>
+
+    <!-- Story -->
+    <div class="story">
+        <h2>Story</h2>
+        <p>
+            Roronoa Zoro is the swordsman of the Straw Hat Pirates and one of the most
+            powerful fighters in the crew. Known for his unique Three Sword Style,
+            Zoro wields a sword in each hand and one in his mouth.
+        </p>
+
+        <p>
+            He joined Luffy early in the journey after being saved from execution.
+            Zoro’s goal is to become the world’s greatest swordsman, a promise he made
+            to his childhood friend Kuina.
+        </p>
+
+        <p>
+            Despite his serious and intimidating personality, Zoro is deeply loyal
+            and will risk his life for his captain and crew. He is also famously bad
+            at directions, often getting lost even in simple situations.
+        </p>
+    </div>
+
+    <!-- Back button -->
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+</div>
+
+<script>
+function goBack() {
+    window.location.href = "contents.html";
+}
+</script>
+
+</body>
+</html>

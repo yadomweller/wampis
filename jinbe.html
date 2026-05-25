@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jinbe Profile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('thousands sunny.jpg') no-repeat center/cover;
+    color: white;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid #3b82f6; /* ocean blue */
+    object-fit: cover;
+}
+
+.profile h1 {
+    margin-top: 15px;
+    font-size: 32px;
+}
+
+/* Info cards */
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+/* Story */
+.story {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+/* Button */
+.back-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="jinbe.jpg" alt="Jinbe">
+        <h1>Jinbe 🌊</h1>
+    </div>
+
+    <!-- Info -->
+    <div class="info">
+        <div class="card"><strong>Birthday:</strong><br>April 2</div>
+        <div class="card"><strong>Age:</strong><br>46</div>
+        <div class="card"><strong>Height:</strong><br>301 cm</div>
+        <div class="card"><strong>Bounty:</strong><br>1,100,000,000 Berries</div>
+        <div class="card"><strong>Role:</strong><br>Helmsman</div>
+        <div class="card"><strong>Race:</strong><br>Fish-Man</div>
+    </div>
+
+    <!-- Story -->
+    <div class="story">
+        <h2>Story</h2>
+        <p>
+            Jinbe is the helmsman of the Straw Hat Pirates and a powerful Fish-Man
+            known for his mastery of Fish-Man Karate. He is a former Warlord of the Sea
+            who chose to follow his own sense of honor and justice.
+        </p>
+
+        <p>
+            Jinbe played a major role in protecting Luffy during critical moments,
+            including the Marineford War. His calm personality and wisdom make him
+            one of the most reliable members of the crew.
+        </p>
+
+        <p>
+            He believes in equality between humans and Fish-Men and fights to end
+            discrimination. Jinbe officially joined the Straw Hats to help Luffy
+            become the King of the Pirates.
+        </p>
+    </div>
+
+    <!-- Back button -->
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+
+</div>
+
+<script>
+function goBack() {
+    window.location.href = "contents.html";
+}
+</script>
+
+</body>
+</html>
